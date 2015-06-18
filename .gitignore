@@ -1,3 +1,8 @@
 *.vtf
 *.mdl
 *.vtx
+*.prt
+*.map
+*.vmx
+*.bsp
+*.phy
