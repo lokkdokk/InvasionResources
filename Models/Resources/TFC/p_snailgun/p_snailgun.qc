@@ -14,27 +14,13 @@ Original internal name:
 
 $modelname "p_snailgun.mdl"
 $cd ".\"
-$cdtexture ".\"
+$cdmaterials ".\"
 $scale 1.0
-$cliptotextures
-
-
-$bbox 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
-$cbox 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
-$eyeposition 0.000000 0.000000 0.000000
-
 
 //reference mesh(es)
-$body "studio" "supernail"
-
-
-// 1 attachment(s)
-$attachment 0 "Bip01 R Hand" 21.564301 -1.694420 1.783020
-
-// 1 hit box(es)
-$hbox 0 "01" -3.630000 -12.120000 -4.960000 3.630000 12.130000 4.960000
+$body "studio" "SuperNailINV.smd"
 
 // 1 animation sequence(s)
-$sequence "dummyidle" "dummyidle" fps 30 
+$sequence "Idle" "SuperNailINV.smd" fps 1 
 
 // End of QC script.

@@ -14,19 +14,15 @@ Original internal name:
 
 $modelname "sentry2.mdl"
 $cd ".\"
-$cdtexture ".\"
+$cdmaterials "models\objects\obj_sentrygun"
 $scale 1.0
-$cliptotextures
-
 
 $bbox 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
 $cbox 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
 $eyeposition 0.000000 0.000000 0.000000
 
-
 //reference mesh(es)
 $body "studio" "TFSentry-2_Template_Biped1"
-
 
 // 1 attachment(s)
 $attachment 0 "Sentry01" 0.000000 2.000000 30.000000

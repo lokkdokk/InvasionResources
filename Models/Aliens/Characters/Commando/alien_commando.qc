@@ -100,6 +100,21 @@ $ikchain rarm RightForearm
 
 $include "alien_commando_weightlists.qci"
 
+// Aim Additions START
+$animation "a_body_L_0_0" "AimLeft.smd" fps 30.00 post weightlist body_look_yaw_weightlist 
+$animation "a_body_M_1_0" "a_body_M_1_0.smd" fps 30.00 post weightlist body_look_yaw_weightlist 
+$animation "a_body_R_2_0" "a_body_R_2_0.smd" fps 30.00 post weightlist body_look_yaw_weightlist 
+$sequence "body_look_yaw" {
+	a_body_L_0_0
+	a_body_M_1_0
+	a_body_R_2_0
+	fps 30.00 post delta autoplay 
+	blendwidth 3
+	blend "body_yaw" 90.00 -90.00
+
+}
+// Aim Additions END
+
 $sequence "Idle" "@Idle.smd" fps 30.00 loop ACT_IDLE 1  {
 	ikrule ltfoot footstep range 0.00 0.00 1.00 1.00 target 0 height 0.00 floor 0.00 radius 0.00 contact 0.00 fakeorigin 8.17 6.87 0.00 fakerotate -0.00 0.00 0.00
 	ikrule rtfoot footstep range 0.00 0.00 1.00 1.00 target 1 height 0.00 floor 0.00 radius 0.00 contact 0.00 fakeorigin -5.43 -3.51 0.00 fakerotate -0.00 0.00 0.00
@@ -128,7 +143,6 @@ $sequence "ShieldUpIdle" "@ShieldUpIdle.smd" fps 30.00 loop ACT_SHIELD_UP_IDLE 1
 
 $sequence "ragdoll" "@ragdoll.smd" fps 30.00 ACT_DIERAGDOLL 1  {
 }
-
 /*
 $collisionjoints "alien_commando_phy.smd" {
 	$mass "100.000000"

@@ -1,5 +1,5 @@
 $modelname "objects/human_obj_buffstation.mdl"
-$cdmaterials "models/objects/"
+$cdmaterials "models/objects/human_obj_buffstation"
 
 $body "studio" "human_obj_buffstation.smd"
 
