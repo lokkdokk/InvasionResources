@@ -97,7 +97,7 @@ $jigglebone "SideArm" {
 		angle_constraint 	37
 	}
 }
-
+/*
 $jigglebone "Pouch" {
 	is_flexible {
 		yaw_stiffness 		700
@@ -109,7 +109,7 @@ $jigglebone "Pouch" {
 		angle_constraint 	37
 	}
 }
-/*
+
 $jigglebone "Grenade1" {
 	is_rigid {
 		length 				20
@@ -258,7 +258,15 @@ $sequence "Idle3" "@Idle3.smd" fps 30.00 loop ACT_IDLE 1  {
 
 }
 
-$sequence "Idle4" "@Idle4.smd" fps 30.00 ACT_DIESIMPLE 1  {
+// Additional missing idle START
+$sequence "Idle4" "@Idle4.smd" fps 30.00 ACT_IDLE 1  {
+	ikrule ltfoot footstep range 0.00 0.00 1.00 1.00 target 0 height 0.00 floor 0.00 radius 0.00 contact 0.00 fakeorigin 8.17 6.87 0.00 fakerotate -0.00 0.00 0.00
+	ikrule rtfoot footstep range 0.00 0.00 1.00 1.00 target 1 height 0.00 floor 0.00 radius 0.00 contact 0.00 fakeorigin -5.43 -3.51 0.00 fakerotate -0.00 0.00 0.00
+
+}
+// Additional missing idle END
+
+$sequence "Idle5" "@Idle4.smd" fps 30.00 ACT_DIESIMPLE 1  {
 	ikrule ltfoot footstep range 0.00 0.00 1.00 1.00 target 0 height 0.00 floor 0.00 radius 0.00 contact 0.00 fakeorigin 8.17 6.87 0.00 fakerotate -0.00 0.00 0.00
 	ikrule rtfoot footstep range 0.00 0.00 1.00 1.00 target 1 height 0.00 floor 0.00 radius 0.00 contact 0.00 fakeorigin -5.43 -3.51 0.00 fakerotate -0.00 0.00 0.00
 
