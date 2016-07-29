@@ -101,6 +101,7 @@ $ikchain rarm RightForearm
 $include "alien_commando_weightlists.qci"
 
 // Aim Additions START
+/*
 $animation "a_body_L_0_0" "AimLeft.smd" fps 30.00 post weightlist body_look_yaw_weightlist 
 $animation "a_body_M_1_0" "a_body_M_1_0.smd" fps 30.00 post weightlist body_look_yaw_weightlist 
 $animation "a_body_R_2_0" "a_body_R_2_0.smd" fps 30.00 post weightlist body_look_yaw_weightlist 
@@ -113,6 +114,7 @@ $sequence "body_look_yaw" {
 	blend "body_yaw" 90.00 -90.00
 
 }
+*/
 // Aim Additions END
 
 $sequence "Idle" "@Idle.smd" fps 30.00 loop ACT_IDLE 1  {
